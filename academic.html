@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="First semester coursework and CGPA dashboard simulation for Abdulfattah Opeyemi Atotileto."
+    >
+    <title>Academic Record | Abdulfattah Opeyemi Atotileto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">AO<span>.</span></a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academic.html" aria-current="page">Academic record</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html">Planner</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero wrap">
+        <p class="eyebrow">ACADEMIC RECORD · 100 LEVEL</p>
+
+        <h1>
+          First semester,
+          <br>
+          <span>my first semester results.</span>
+        </h1>
+      </section>
+
+      <section class="wrap academic-dashboard">
+        <div class="academic-summary">
+          <div>
+            <p class="eyebrow">CURRENT CGPA</p>
+            <p class="cgpa-number">4.41</p>
+            <p class="summary-caption">Current cumulative average</p>
+          </div>
+
+          <div class="summary-side">
+            <span class="status-dot"></span>
+            <span>100 Level · First Semester</span>
+          </div>
+        </div>
+
+        <div class="course-panel">
+          <div class="course-panel-heading">
+            <div>
+              <p class="eyebrow">COURSEWORK SIMULATOR</p>
+              <h2>My first semester courses</h2>
+            </div>
+
+            <button type="button" class="button" id="add-course">
+              Add a course <span aria-hidden="true">+</span>
+            </button>
+          </div>
+
+          <p class="course-instruction">First semester · 100 Level · 17 credit units</p>
+
+          <div class="course-table-wrap">
+            <table class="course-table">
+              <thead>
+                <tr>
+                  <th scope="col">Course code</th>
+                  <th scope="col">Credit units</th>
+                  <th scope="col">Grade point</th>
+                  <th scope="col">
+                    <span class="visually-hidden">Remove course</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="course-rows"></tbody>
+            </table>
+          </div>
+
+          <div class="semester-result">
+            <div>
+              <span class="result-label">FIRST SEMESTER GPA</span>
+              <strong id="semester-gpa">—</strong>
+              <span id="course-total" class="result-detail">Add course details to calculate</span>
+            </div>
+            <p>Semester GPA is calculated from total grade points divided by total credit units.</p>
+          </div>
+
+          <div class="academic-actions">
+            <button type="button" class="text-button" id="reset-courses">
+              Clear entered courses
+            </button>
+            <span id="course-status" class="small-note" aria-live="polite">
+              Results shown from your first-semester record.
+            </span>
+          </div>
+        </div>
+
+        <p class="small-note academic-note"></p>
+      </section>
+
+      <section class="wrap academic-bottom">
+        <p class="eyebrow">LEARNING IN PROGRESS</p>
+        <h2>Building a strong foundation, semester by semester.</h2>
+        <a class="text-link" href="planner.html">Plan my study tasks ↗</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>© <span data-year></span> Abdulfattah Opeyemi Atotileto</span>
+        <span>Made for learning and sharing</span>
+      </div>
+    </footer>
+  </body>
+</html>
+

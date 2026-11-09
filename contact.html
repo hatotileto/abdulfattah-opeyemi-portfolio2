@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Abdulfattah Opeyemi Atotileto.">
+    <title>Contact | Abdulfattah Opeyemi Atotileto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">AO<span>.</span></a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academic.html">Academic record</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html">Planner</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero wrap">
+
+        <h1>
+          Say hello.
+          <br>
+          <span>Let’s start a conversation.</span>
+        </h1>
+
+        <p class="lead">
+          For professional or project enquiries, use the form or contact me by email.
+        </p>
+      </section>
+
+      <section class="wrap contact-grid">
+        <div>
+          <p class="eyebrow">GET IN TOUCH</p>
+
+          <h2>
+            Based in Lagos,
+            <br>
+            Nigeria.
+          </h2>
+
+          <a class="contact-email" href="mailto:hatotileto@yahoo.com">
+            hatotileto@yahoo.com
+          </a>
+
+          <p>
+            <a
+              class="text-link"
+              href="https://www.linkedin.com/in/abdulfattah-atotileto"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Connect on LinkedIn ↗
+            </a>
+          </p>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required>
+
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+
+          <label for="phone">Phone number</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            inputmode="numeric"
+            autocomplete="tel"
+            pattern="[0-9]+"
+            required
+          >
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+
+          <button class="button" type="submit">
+            Prepare email <span aria-hidden="true">↗</span>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>© <span data-year></span> Abdulfattah Opeyemi Atotileto</span>
+        <span>Made for learning and sharing</span>
+      </div>
+    </footer>
+  </body>
+</html>
+

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple local study task planner.">
+    <title>Academic Planner | Abdulfattah Opeyemi Atotileto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">AO<span>.</span></a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academic.html">Academic record</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html" aria-current="page">Planner</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero wrap">
+        <p class="eyebrow">ACADEMIC PLANNER</p>
+
+        <h1>
+          Make room for
+          <br>
+          <span>the next small step.</span>
+        </h1>
+
+        <p class="lead">
+          A lightweight study list. Add a task, mark it done or remove it.
+        </p>
+      </section>
+
+      <section class="wrap planner-shell">
+        <form id="task-form" class="task-form">
+          <label for="task-input">What do you need to do?</label>
+
+          <div class="input-row">
+            <input
+              id="task-input"
+              name="task"
+              maxlength="140"
+              required
+              placeholder="e.g. Review cybersecurity notes"
+            >
+            <button class="button" type="submit">Add task</button>
+          </div>
+        </form>
+
+        <div class="planner-toolbar">
+          <div class="filters" role="group" aria-label="Filter tasks">
+            <button class="filter active" data-filter="all" type="button">All</button>
+            <button class="filter" data-filter="open" type="button">To do</button>
+            <button class="filter" data-filter="done" type="button">Completed</button>
+          </div>
+
+          <button class="text-button" id="clear-done" type="button">Clear completed</button>
+        </div>
+
+        <ul id="task-list" class="task-list" aria-live="polite"></ul>
+
+        <p id="empty-state" class="empty-state">
+          No tasks here yet. Add one small next step above.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>© <span data-year></span> Abdulfattah Opeyemi Atotileto</span>
+        <span>Made for learning and sharing</span>
+      </div>
+    </footer>
+  </body>
+</html>
+
