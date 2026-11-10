@@ -6,6 +6,16 @@ A responsive personal portfolio featuring academic results, professional experie
 
 Open `index.html` in a modern browser, or serve this folder locally with VS Code Live Server or `python -m http.server 8000` and visit `http://localhost:8000`.
 
+## Host on GitHub Pages
+
+This repository is configured to publish the site automatically when changes are pushed to `main`.
+
+1. Push the repository to GitHub.
+2. In the repository, open **Settings → Pages** and set the build and deployment source to **GitHub Actions**.
+3. Open the **Actions** tab and wait for the **Deploy static site to GitHub Pages** workflow to finish.
+
+The site will be available at <https://hatotileto.github.io/abdulfattah-opeyemi-portfolio2/>. Future pushes to `main` will publish updates automatically. You can also start a deployment manually from the workflow’s **Run workflow** button.
+
 ## Pages
 
 - **Home:** Personal introduction and featured Market Rush project.
@@ -23,9 +33,8 @@ The Academic Record page displays the current CGPA of 4.41 and provides blank ed
 
 - Planner entries are stored locally in the browser and do not sync across devices.
 - The contact form has no server-side delivery; it opens the visitor’s configured email application.
-- The profile illustration is a placeholder. Replace `assets/profile-placeholder.svg` with a personal photo before publishing if desired.
+- The profile image in `assets/profile.jpg` is an illustration.
 - Google Fonts are loaded externally when available; system font fallbacks are included.
-- Static hosting and a GitHub repository are not included in this package.
 
 ## Files
 
